@@ -16,25 +16,25 @@ The dataset (`amazon_reviews.csv`) includes over 17,000 records. The pipeline co
 4. Model Training & Evaluation (SVM, Logistic Regression, Naïve Bayes)
 5. Interactive Prediction for New Reviews
 
-##Features
-###1. Reviews Pre‑processing
+## Features
+### 1. Reviews Pre‑processing
 - Tokenize and lowercase text
 
 - Remove NLTK stop‑words
 
 - Apply NLTK Porter stemmer
 
-###2. Label Mapping & Splitting
+### 2. Label Mapping & Splitting
 - Map labels: negative → 0, neutral → 1, positive → 2
 
 - Split: 80% train / 20% test
 
-###3. TF‑IDF Vectorization
+### 3. TF‑IDF Vectorization
 - Fit TfidfVectorizer on training set
 
 - Transform both train and test reviews
 
-###4. Model Training & Evaluation
+### 4. Model Training & Evaluation
 - Support Vector Machine (sklearn.svm.SVC)
 
 - Logistic Regression (sklearn.linear_model.LogisticRegression)
@@ -43,7 +43,7 @@ The dataset (`amazon_reviews.csv`) includes over 17,000 records. The pipeline co
 
 - Print classification report for each model
 
-###5. Interactive Prediction
+### 5. Interactive Prediction
 - Load best‑performing model & vectorizer
 
 - Prompt user for a new review
